@@ -9,4 +9,12 @@ print(arr.shape)
 print ('=========AM STASTICAL MACHINE========')
 arr.reshape((15,2))
 print(arr.reshape((15,2)))
+
+print(arr.reshape((6,5)))
+print(arr.reshape((10,3)))
+
+
+
+
+
 print('=========@author:->Arnab Maiti=========')
