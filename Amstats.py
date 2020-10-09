@@ -1,20 +1,14 @@
 #created by AM Technology
-
+import matplotlib.pyplot as plt
 import numpy as np
-am=[382,367,5528,5527,5527,5527,5527,5318,5529,6820,4428,99257,5527,5528,5528]
-an=[272,26,517,2517,6528,5427,4318,5267,5527,5526,5161,5426,6262,5627,5427]
-ar=an+am
-arr=np.array(ar)
-print(arr.shape)
-print ('=========AM STASTICAL MACHINE========')
-arr.reshape((15,2))
-print(arr.reshape((15,2)))
 
-print(arr.reshape((6,5)))
-print(arr.reshape((10,3)))
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2*np.pi*t)
+plt.plot(t, s)
 
-
-
-
-
-print('=========@author:->Arnab Maiti=========')
+plt.xlabel('time (s)')
+plt.ylabel('voltage (mV)')
+plt.title('About as simple as it gets, folks')
+plt.grid(True)
+plt.savefig("test.png")
+plt.show()
